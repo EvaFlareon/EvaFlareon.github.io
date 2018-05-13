@@ -1,0 +1,1094 @@
+html, body {
+  margin: 0;
+  padding: 0;
+
+  font-size: 62.5%;
+}
+
+.header {
+  background-size: cover;
+}
+
+.center {
+  display: flex;
+  box-sizing: border-box;
+
+  margin: 0 auto;
+
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.h1 {
+  color: #ffffff;
+
+  text-transform: uppercase;
+
+  flex-shrink: 0;
+}
+
+.header_button {
+  padding: 0;
+}
+
+.apple_button, .google_button {
+  color: #ffffff;
+
+  background-color: #5e42b0;
+
+  border: none;
+  border-radius: 40px;
+}
+
+.athlets {
+  display: flex;
+  flex-direction: column;
+
+  color: #000000;
+}
+
+.athlets_collaboration {
+  background-color: #f6f4fa;
+}
+
+.athlets_growth {
+  color: #ffffff;
+  background-color: #5e42b0;
+}
+
+.athlets_connection, .athlets_collaboration, .athlets_growth {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.athlets_h2 {
+  margin-bottom: 0px;
+
+  color: #e7e7e7;
+
+  text-transform: uppercase;
+  letter-spacing: 0px;
+}
+
+.h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  color: #c1c1c1;
+
+  text-transform: uppercase;
+}
+
+.number {
+  color: #000000;
+}
+
+.number::after {
+  content: "";
+  display: block;
+
+  width: 19px;
+  height: 5px;
+  margin-top: 2px;
+  margin-left: 1px;
+
+  border: none;
+  border-radius: 3px;
+  color: #5e42b0;
+  background-color: #5e42b0;
+}
+
+.grey_line::after {
+  color: #efefef;
+  background-color: #efefef;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+
+  color: #000000;
+}
+
+.player_collaboration {
+  background-color: #f5f6f7;
+}
+
+.player_growth {
+  color: #ffffff;
+  background-color: #0a0e34;
+}
+
+.player_connection, .player_collaboration, .player_growth {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.player_h2 {
+  color: #e7e7e7;
+
+  text-transform: uppercase;
+  letter-spacing: 0px;
+}
+
+.player_growth > .number {
+  color: #9173e6;
+}
+
+.be_active, .find_contact, .work_it {
+  display: flex;
+}
+
+.be_active_image, .find_contact_image, .work_it_image {
+  background-size: cover;
+}
+
+.be_active_h2 {
+  color: #e7e7e7;
+
+  text-transform: uppercase;
+}
+
+.square {
+  position: absolute;
+
+  background-color: #5e42b0;
+}
+
+.square > .number {
+  color: #f5f6f7;
+}
+
+.square > .number::after {
+  content: "";
+  display: block;
+
+  width: 19px;
+  height: 5px;
+  margin-top: 2px;
+  margin-left: 1px;
+
+  border: none;
+  border-radius: 3px;
+  color: #8f7bc8;
+  background-color: #8f7bc8;
+}
+
+.find_contact_h2 {
+  color: #e7e7e7;
+
+  text-transform: uppercase;
+}
+
+.work_it_h2 {
+  color: #e7e7e7;
+
+  text-transform: uppercase;
+}
+
+.footer {
+  padding-bottom: 33px;
+
+  background-size: cover;
+}
+
+.footer > .center {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+  padding-left: 0;
+}
+
+.footer_button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.surface_button {
+  display: flex;
+
+  padding: 0;
+
+  border: none;
+  background: transparent;
+}
+
+.logo {
+  background: linear-gradient(#7756d7, #50379a);
+}
+
+.surface_button_p {
+  margin-top: 8px;
+  color: #a496ca;
+
+  text-transform: uppercase;
+}
+
+@media (max-width: 647px) {
+  .header {
+    background: url('../images/football_320.jpg') no-repeat #0a0e34;
+  }
+
+  .center {
+    width: 280px;
+    padding: 14px 0;
+  }
+
+  .surface_logo_text {
+    width: 133px;
+    height: 36px;
+    margin-top: 20px;
+  }
+
+  .h1 {
+    margin-top: 130px;
+    margin-bottom: 108px;
+    
+    font: normal bold 2.8rem/1.03 OpenSans-Bold;
+
+    letter-spacing: 4px;
+    word-spacing: 3px;
+  }
+
+  .header_button {
+    margin-bottom: 63px;
+    margin-left: 0;
+  }
+
+  .apple_button, .google_button {
+    min-width: 100%;
+    height: 35px;
+    margin: 7px 0;
+
+    font-size: 0.8rem;
+  }
+
+  .apple_logo, .google_logo {
+    width: 20px;
+    height: 24px;
+  }
+
+  .athlets {
+    font: normal normal 1.5rem/1.3 OpenSans-Regular;
+
+    background: url('../images/footballer_320.png') no-repeat;
+    background-position: 70px 80px;
+
+    letter-spacing: 0.7px;
+  }
+
+  .athlets > div:first-of-type {
+    padding-top: 305px;
+    padding-bottom: 52px;
+  }
+
+  .athlets_collaboration {
+    padding-top: 52px;
+    padding-bottom: 48px;
+  }
+
+  .athlets_growth {
+    padding-top: 52px;
+    padding-bottom: 32px;
+  }
+
+  .athlets_connection, .athlets_collaboration, .athlets_growth {
+    padding-left: 20px;
+    padding-right: 50px;
+  }
+
+  .athlets_h2 {
+    margin-top: 8px;
+    margin-left: 20px;
+
+    font: normal bold 5rem OpenSans-Bold;
+  }
+
+  .h3 {
+    margin-left: 5px;
+
+    font: normal bold 2.8rem/1 OpenSans-Bold;
+
+    letter-spacing: 1.5px;
+  }
+
+  .athlets_connection > p, .athlets_collaboration > p, .athlets_growth > p, .player_connection > p, .player_collaboration > p, .player_growth > p {
+    margin: 20px 10px 0 0;
+  }
+
+  .number {
+    font: normal bold 1.4rem OpenSans-Bold;
+  }
+
+  .player {
+    font: normal normal 1.5rem OpenSans-Regular;
+
+    background: url('../images/busketballer_320.png') no-repeat;
+    background-position: 3px 83px;
+
+    letter-spacing: 0.8px;
+  }
+
+  .player > div:first-of-type {
+    padding-top: 305px;
+    padding-bottom: 10px;
+  }
+
+  .invisible {
+    opacity: 0;
+  }
+
+  .player_collaboration {
+    padding-top: 51px;
+    padding-bottom: 51px;
+  }
+
+  .player_growth {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .player_connection, .player_collaboration, .player_growth {
+    padding-left: 20px;
+    padding-right: 50px;
+  }
+
+  .player_h2 {
+    margin: 8px 16px 0 0;
+
+    font: normal bold 5rem OpenSans-Bold;
+  }
+
+  .be_active, .find_contact, .work_it {
+    flex-direction: column;
+
+    font: normal normal 1.6rem/1.25 OpenSans-Regular;
+  }
+
+  .be_active_image, .be_active_text, .find_contact_image, .find_contact_text, .work_it_image, .work_it_text {
+    min-width: 100%;
+  }
+
+  .be_active_image, .find_contact_image, .work_it_image {
+    height: 352px;
+  }
+
+  .be_active_image {
+    background: url('../images/shutterstock_320.jpg') no-repeat;
+  }
+
+  .find_contact_image {
+    background: url('../images/players_320.jpg') no-repeat;
+  }
+
+  .work_it_image {
+    background: url('../images/group_photo_320.jpg') no-repeat;
+  }
+
+  .be_active_h2 {
+    margin-top: 23px 18px 0 0;
+
+    font: normal bold 2.8rem OpenSans-Bold;
+
+    letter-spacing: 1px;
+    word-spacing: 2px;
+  }
+
+  .be_active_text > p {
+    margin-top: 0;
+    margin-bottom: 76px;
+    padding: 14px 90px 0 19px;
+
+    letter-spacing: 0.8px;
+    word-spacing: 0.1px;
+  }
+
+  .square {
+    width: 70px;
+    height: 70px;
+    transform: translate(-230%, 419%);
+
+    line-height: 70px;
+  }
+
+  .square > .number {
+    font-size: 1.4rem;
+  }
+
+  .find_contact_h2 {
+    margin-top: 26px;
+    margin-bottom: 0px;
+    margin-left: 17px;
+
+    font: normal bold 2.8rem OpenSans-Bold;
+
+    letter-spacing: 1px;
+    word-spacing: 2.5px;
+  }
+
+  .find_contact_text > p {
+    margin-top: 0;
+    margin-bottom: 78px;
+    padding: 13px 50px 0 19px;
+
+    letter-spacing: 0.8px;
+  }
+
+  .work_it_h2 {
+    margin-top: 26px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+
+    font: normal bold 2.8rem OpenSans-Bold;
+
+    letter-spacing: 1px;
+    word-spacing: 1.5px;
+  }
+
+  .work_it_text > p {
+    margin-top: 0;
+    margin-bottom: 67px;
+    padding: 13px 50px 0 20px;
+
+    letter-spacing: 0.8px;
+  }
+
+  .footer {
+    background: url('../images/photo_320.jpg') no-repeat #0a0e34;
+  }
+
+  .footer_button {
+    margin-top: 100px;
+    margin-bottom: 60px;
+  }
+
+  .surface_button {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 74px;
+    height: 74px;
+    margin: 0px;
+
+    border-radius: 15px;
+  }
+
+  .logo > svg {
+    width: 57px;
+    height: 47px;
+    margin-top: 12px;
+  }
+
+  .surface_download_text {
+    padding-top: 53px;
+  }
+
+  .surface_button .h1 {
+    padding-left: 0px;
+
+    font-size: 3.2rem;
+
+    letter-spacing: 1.5px;
+  }
+
+  .surface_button_p {
+    padding-left: 0px;
+
+    font: normal normal 1.4rem/1 OpenSans-Regular;
+
+    text-align: center;
+  }
+
+  .download_button {
+    margin-top: 55px;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 648px) and (max-width: 959px) {
+  .header {
+    background: url('../images/football_768.jpg') no-repeat #0a0e34;
+  }
+
+  .center {
+    max-width: 750px;
+    padding: 24px;
+  }
+
+  .surface_logo_text {
+    width: 205px;
+    height: 56px;
+    margin-top: 15px;
+  }
+
+  .h1 {
+    margin-top: 165px;
+    margin-bottom: 300px;
+    padding-left: 60px;
+
+    font: normal bold 6.4rem/1.2 OpenSans-Bold;
+
+    letter-spacing: 3px;
+    word-spacing: 0px;
+  }
+
+  .header_button {
+    margin-bottom: 68px;
+    margin-left: 16px;
+  }
+
+  .apple_button, .google_button {
+    width: 310px;
+    height: 78px;
+    margin: 0 16px;
+
+    box-shadow: 0 16px 24px 0 #0a0e34;
+  }
+
+  .apple_logo, .google_logo {
+    width: 42px;
+    height: 48px;
+  }
+
+  .athlets {
+    font: normal normal 1.6rem/1.8 OpenSans-Regular;
+
+    background: url('../images/footballer_768.png') no-repeat;
+    background-position: 0 94px;
+
+    letter-spacing: 0.6px;
+    word-spacing: 1.3px;
+  }
+
+  .athlets > div:first-of-type {
+    padding-top: 35px;
+    padding-bottom: 25px;
+  }
+
+  .athlets_collaboration {
+    z-index: -1;
+    padding-top: 37px;
+    padding-bottom: 18px;
+  }
+
+  .athlets_growth {
+    z-index: -1;
+    padding-top: 37px;
+    padding-bottom: 46px;
+  }
+
+  .athlets_connection, .athlets_collaboration, .athlets_growth {
+    padding-left: 291px;
+    padding-right: 10px;
+  }
+
+  .athlets_h2 {
+    margin-top: 57px;
+    margin-left: 291px;
+
+    font: normal bold 8rem OpenSans-Bold;
+  }
+
+  .h3 {
+    margin-left: 10px;
+
+    font: normal bold 3.2rem/1 OpenSans-Bold;
+
+    letter-spacing: 1.5px;
+  }
+
+  .athlets_connection > p, .athlets_collaboration > p, .athlets_growth > p {
+    margin-top: 20px;
+  }
+
+  .invisible {
+    opacity: 0;
+  }
+
+  .number {
+    font: normal bold 1.8rem OpenSans-Bold;
+  }
+
+  .player {
+    font: normal normal 1.6rem/1.8 OpenSans-Regular;
+
+    background: url('../images/busketballer_768.png') no-repeat;
+    background-position: 332px 63px;
+  }
+
+  .player > div:first-of-type {
+    padding-top: 35px;
+    padding-bottom: 14px;
+
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+  }
+
+  .player_connection > p, .player_collaboration > p, .player_growth > p {
+    margin-top: 21px;
+    margin-bottom: 0;
+  }
+
+  .player_collaboration > p {
+    letter-spacing: 1px;
+    word-spacing: -1px;
+  }
+
+  .player_collaboration {
+    z-index: -1;
+    padding-top: 58px;
+    padding-bottom: 68px;
+  }
+
+  .player_growth {
+    z-index: -1;
+    padding-top: 50px;
+    padding-bottom: 46px;
+  }
+
+  .player_growth > p {
+    letter-spacing: 1.8px;
+  }
+
+  .player_connection, .player_collaboration, .player_growth {
+    padding-left: 31px;
+    padding-right: 250px;
+  }
+
+  .player_h2 {
+    margin: 55px 27px 0 0;
+
+    font: normal bold 8rem OpenSans-Bold;
+  }
+
+  .be_active, .find_contact, .work_it {
+    flex-direction: column;
+
+    font: normal normal 2.4rem/1.15 OpenSans-Regular;
+  }
+
+  .be_active_image, .be_active_text, .find_contact_image, .find_contact_text, .work_it_image, .work_it_text {
+    min-width: 100%;
+  }
+
+  .be_active_image, .find_contact_image, .work_it_image {
+    height: 585px;
+  }
+
+  .be_active_image {
+    background: url('../images/shutterstock_768.jpg') no-repeat;
+  }
+
+  .find_contact_image {
+    background: url('../images/players_768.jpg') no-repeat;
+  }
+
+  .work_it_image {
+    background: url('../images/group_photo_768.jpg') no-repeat;
+  }
+
+  .be_active_h2 {
+    margin-top: 62px 30px 0 0;
+
+    font: normal bold 8rem OpenSans-Bold;
+
+    letter-spacing: 0px;
+  }
+
+  .be_active_text > p {
+    margin-top: 0;
+    margin-bottom: 100px;
+    padding: 11px 45px 0 33px;
+
+    letter-spacing: 1.2px;
+  }
+
+  .square {
+    width: 116px;
+    height: 116px;
+    transform: translate(-295%, 435%);
+
+    line-height: 116px;
+  }
+
+  .square > .number {
+    font-size: 2.4rem;
+  }
+
+  .find_contact_h2 {
+    margin-top: 51px;
+    margin-bottom: 0px;
+    margin-left: 28px;
+
+    font: normal bold 8rem OpenSans-Bold;
+
+    letter-spacing: 0px;
+  }
+
+  .find_contact_text > p {
+    margin-top: 0;
+    margin-bottom: 107px;
+    padding: 13px 45px 0 33px;
+
+    letter-spacing: 1.2px;
+  }
+
+  .find_contact > .square, .work_it > .square {
+    transform: translate(-295%, 427%);
+  }
+
+  .work_it_h2 {
+    margin-top: 53px;
+    margin-bottom: 0px;
+    margin-left: 30px;
+
+    font: normal bold 8rem OpenSans-Bold;
+
+    letter-spacing: 0px;
+  }
+
+  .work_it_text > p {
+    margin-top: 0;
+    margin-bottom: 115px;
+    padding: 10px 40px 0 33px;
+
+    letter-spacing: 1.2px;
+  }
+
+  .footer {
+    background: url('../images/photo_768.jpg') no-repeat #0a0e34;
+  }
+
+  .footer_button {
+    margin-top: 126px;
+    margin-bottom: 40px;
+  }
+
+  .surface_button {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 130px;
+    height: 137px;
+    margin-right: 0px;
+    margin-left: 14px;
+
+    border-radius: 30px;
+  }
+
+  .logo > svg {
+    width: 105px;
+    height: 85px;
+    margin-top: 26px;
+  }
+
+  .surface_download_text {
+    padding-top: 61px;
+  }
+
+  .surface_button .h1 {
+    padding-left: 15px;
+
+    font-size: 8rem;
+
+    letter-spacing: 4.5px;
+  }
+
+  .surface_button_p {
+    padding-left: 16px;
+
+    font: normal normal 3.6rem/1 OpenSans-Regular;
+
+    text-align: center;
+  }
+
+  .download_button {
+    margin-top: 246px;
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 960px) {
+  .header {
+    background: url('../images/football.jpg') no-repeat #0a0e34;
+  }
+
+  .center {
+    max-width: 1560px;
+    padding: 14px;
+  }
+
+  .surface_logo_text {
+    width: 191px;
+    height: 52px;
+    margin-top: 31px;
+  }
+
+  .h1 {
+    margin-top: 276px;
+    margin-bottom: 211px;
+
+    font: normal bold 9rem/1.03 OpenSans-Bold;
+
+    letter-spacing: 4px;
+    word-spacing: 3px;
+  }
+
+  .header_button {
+    margin-bottom: 96px;
+    margin-left: 10px;
+  }
+
+  .apple_button, .google_button {
+    width: 310px;
+    height: 78px;
+    margin: 0 25px;
+
+    box-shadow: 0 16px 24px 0 #0a0e34;
+  }
+
+  .apple_logo, .google_logo {
+    width: 42px;
+    height: 48px;
+  }
+
+  .athlets {
+    font: normal normal 2rem OpenSans-Regular;
+
+    background: url('../images/footballer.png') no-repeat;
+    background-position: 320px -16px;
+
+    letter-spacing: 1px;
+  }
+
+  .athlets > div:first-of-type {
+    padding-top: 66px;
+    padding-bottom: 38px;
+  }
+
+  .athlets_collaboration {
+    z-index: -1;
+    padding-top: 60px;
+    padding-bottom: 41px;
+  }
+
+  .athlets_growth {
+    z-index: -1;
+    padding-top: 85px;
+    padding-bottom: 81px;
+  }
+
+  .athlets_connection, .athlets_collaboration, .athlets_growth {
+    padding-left: 1007px;
+    padding-right: 160px;
+  }
+
+  .athlets_h2 {
+    margin-top: 88px;
+    margin-left: 1007px;
+
+    font: normal bold 8rem OpenSans-Bold;  
+  }
+
+  .h3 {
+    margin-left: 10px;
+
+    font: normal bold 3.6rem/1 OpenSans-Bold;
+
+    letter-spacing: 1.8px;
+  }
+
+  .number {
+    font: normal bold 1.8rem OpenSans-Bold;
+  }
+
+  .player {
+    font: normal normal 2rem OpenSans-Regular;
+
+    background: url('../images/busketballer.png') no-repeat;
+    background-position: 804px -29px;
+
+    letter-spacing: 1px;
+  }
+
+  .player > div:first-of-type {
+    padding-top: 66px;
+    padding-bottom: 51px;
+  }
+
+  .player_collaboration {
+    z-index: -1;
+    padding-top: 58px;
+    padding-bottom: 59px;
+  }
+
+  .player_growth {
+    z-index: -1;
+    padding-top: 93px;
+    padding-bottom: 71px;
+  }
+
+  .player_connection, .player_collaboration, .player_growth {
+    padding-left: 320px;
+    padding-right: 950px;
+  }
+
+  .player_h2 {
+    margin: 88px 315px 0 0;
+
+    font: normal bold 8rem OpenSans-Bold;
+  }
+
+  .be_active, .find_contact, .work_it {
+    font: normal normal 2.4rem/1.15 OpenSans-Regular;
+  }
+
+  .be_active_image, .be_active_text, .find_contact_image, .find_contact_text, .work_it_image, .work_it_text {
+    width: 50%;
+  }
+
+  .be_active_image {
+    background: url('../images/shutterstock.jpg') no-repeat;
+  }
+
+  .find_contact_image {
+    background: url('../images/players.jpg') no-repeat;
+  }
+
+  .work_it_image {
+    background: url('../images/group_photo.jpg') no-repeat;
+  }
+
+  .be_active_h2 {
+    margin-top: 234px 131px 0 0;
+
+    font: normal bold 8rem OpenSans-Bold;
+
+    letter-spacing: 0px;
+  }
+
+  .be_active_text > p {
+    margin-bottom: 216px;
+    padding: 67px 450px 0 134px;
+
+    letter-spacing: 1.2px;
+  }
+
+  .square {
+    width: 168px;
+    height: 155px;
+    left: 50%;
+    transform: translate(-45%, 137%);
+
+    line-height: 155px;
+  }
+
+  .square > .number {
+    font-size: 2.4rem;
+  }
+
+  .find_contact {
+    flex-direction: row-reverse;
+  }
+
+  .find_contact_h2 {
+    margin-top: 233px;
+    margin-bottom: 0px;
+    margin-left: 186px;
+
+    font: normal bold 8rem OpenSans-Bold;
+
+    letter-spacing: 0px;
+  }
+
+  .find_contact_text > p {
+    margin-bottom: 285px;
+    padding: 25px 320px 0 191px;
+
+    letter-spacing: 1.2px;
+  }
+
+  .work_it_h2 {
+    margin-top: 234px;
+    margin-bottom: 0px;
+    margin-left: 135px;
+
+    font: normal bold 8rem OpenSans-Bold;
+
+    letter-spacing: 0px;
+  }
+
+  .work_it_text > p {
+    margin-bottom: 222px;
+    padding: 60px 250px 0 133px;
+
+    letter-spacing: 1.2px;
+  }
+
+  .footer {
+    background: url('../images/photo.jpg') no-repeat #0a0e34;
+  }
+
+  .footer_button {
+    margin-top: 215px;
+    margin-bottom: 230px;
+  }
+
+  .logo {
+    width: 130px;
+    height: 137px;
+    margin-right: 30px;
+
+    border-radius: 30px;
+  }
+
+  .logo > svg {
+    width: 105px;
+    height: 85px;
+    margin-top: 26px;
+  }
+
+  .surface_download_text {
+    padding-top: 8px;
+  }
+
+  .surface_button .h1 {
+    font-size: 8rem;
+  }
+
+  .surface_button_p {
+    font: normal normal 3rem/1 OpenSans-Regular;
+
+    text-align: left;
+  }
+
+  .download_button {
+    margin-top: 130px;
+    padding-left: 25px;
+  }
+}
+
+@font-face { 
+  font-family: 'OpenSans-Bold'; 
+  src: url('../fonts/OpenSans-Bold.woff2') format('woff2'), 
+    url('../fonts/OpenSans-Bold.ttf')  format('truetype'),
+    url('../fonts/OpenSans-Bold.woff') format('woff'); 
+  font-weight: bold; 
+  font-style: normal; 
+}
+
+@font-face { 
+  font-family: 'OpenSans-Regular'; 
+  src: url('../fonts/OpenSans-Regular.woff2') format('woff2'), 
+    url('../fonts/OpenSans-Regular.ttf')  format('truetype'),
+    url('../fonts/OpenSans-Regular.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
