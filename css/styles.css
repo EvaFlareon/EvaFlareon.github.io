@@ -6,17 +6,18 @@ html, body {
 }
 
 .header {
-  background-size: cover;
+  background-size: contain;
 }
 
 .center {
   display: flex;
+  flex-direction: column;
   box-sizing: border-box;
 
   margin: 0 auto;
 
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
 }
 
 .h1 {
@@ -28,16 +29,36 @@ html, body {
 }
 
 .header_button {
-  padding: 0;
+  display: flex;
+
+  font: normal normal 1.4em OpenSans-Regular;
 }
 
 .apple_button, .google_button {
+  display: flex;
+
   color: #ffffff;
 
   background-color: #5e42b0;
 
   border: none;
   border-radius: 40px;
+
+  text-transform: uppercase;
+}
+
+.apple_button :nth-child(1), .google_button  :nth-child(1) {
+  flex-grow: 0;
+}
+
+.apple_button > :nth-child(2), .google_button > :nth-child(2) {
+  margin-left: 15px;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.bold {
+  font: normal normal 1.4em OpenSans-Bold;
 }
 
 .athlets {
@@ -140,7 +161,7 @@ html, body {
 }
 
 .be_active_image, .find_contact_image, .work_it_image {
-  background-size: cover;
+  background-size: contain;
 }
 
 .be_active_h2 {
@@ -189,7 +210,7 @@ html, body {
 .footer {
   padding-bottom: 33px;
 
-  background-size: cover;
+  background-size: contain;
 }
 
 .footer > .center {
@@ -254,6 +275,8 @@ html, body {
   }
 
   .header_button {
+    flex-direction: column;
+    width: 100%;
     margin-bottom: 63px;
     margin-left: 0;
   }
@@ -264,11 +287,17 @@ html, body {
     margin: 7px 0;
 
     font-size: 0.8rem;
+
+    justify-content: center;
   }
 
   .apple_logo, .google_logo {
     width: 20px;
     height: 24px;
+  }
+
+  .apple_button > :nth-child(2), .google_button > :nth-child(2) {
+    flex-grow: 0;
   }
 
   .athlets {
@@ -297,7 +326,7 @@ html, body {
 
   .athlets_connection, .athlets_collaboration, .athlets_growth {
     padding-left: 20px;
-    padding-right: 50px;
+    padding-right: 5px;
   }
 
   .athlets_h2 {
@@ -353,11 +382,11 @@ html, body {
 
   .player_connection, .player_collaboration, .player_growth {
     padding-left: 20px;
-    padding-right: 50px;
+    padding-right: 5px;
   }
 
   .player_h2 {
-    margin: 8px 16px 0 0;
+    margin: 8px 16px 0;
 
     font: normal bold 5rem OpenSans-Bold;
   }
@@ -389,7 +418,7 @@ html, body {
   }
 
   .be_active_h2 {
-    margin-top: 23px 18px 0 0;
+    margin: 23px 18px 0;
 
     font: normal bold 2.8rem OpenSans-Bold;
 
@@ -400,7 +429,7 @@ html, body {
   .be_active_text > p {
     margin-top: 0;
     margin-bottom: 76px;
-    padding: 14px 90px 0 19px;
+    padding: 14px 40px 0 19px;
 
     letter-spacing: 0.8px;
     word-spacing: 0.1px;
@@ -432,7 +461,7 @@ html, body {
   .find_contact_text > p {
     margin-top: 0;
     margin-bottom: 78px;
-    padding: 13px 50px 0 19px;
+    padding: 13px 10px 0 19px;
 
     letter-spacing: 0.8px;
   }
@@ -451,17 +480,19 @@ html, body {
   .work_it_text > p {
     margin-top: 0;
     margin-bottom: 67px;
-    padding: 13px 50px 0 20px;
+    padding: 13px 10px 0 20px;
 
     letter-spacing: 0.8px;
   }
 
   .footer {
+    padding-bottom: 0;
+
     background: url('../images/photo_320.jpg') no-repeat #0a0e34;
   }
 
   .footer_button {
-    margin-top: 100px;
+    margin-top: 85px;
     margin-bottom: 60px;
   }
 
@@ -493,7 +524,8 @@ html, body {
 
     font-size: 3.2rem;
 
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
+    word-spacing: 0px;
   }
 
   .surface_button_p {
@@ -505,6 +537,9 @@ html, body {
   }
 
   .download_button {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     margin-top: 55px;
     padding-left: 0;
   }
@@ -546,6 +581,7 @@ html, body {
     width: 310px;
     height: 78px;
     margin: 0 16px;
+    padding-left: 55px;
 
     box-shadow: 0 16px 24px 0 #0a0e34;
   }
@@ -661,7 +697,7 @@ html, body {
   }
 
   .player_h2 {
-    margin: 55px 27px 0 0;
+    margin: 55px 27px 0;
 
     font: normal bold 8rem OpenSans-Bold;
   }
@@ -693,7 +729,7 @@ html, body {
   }
 
   .be_active_h2 {
-    margin-top: 62px 30px 0 0;
+    margin: 62px 30px 0;
 
     font: normal bold 8rem OpenSans-Bold;
 
@@ -761,11 +797,13 @@ html, body {
   }
 
   .footer {
+    padding-bottom: 0;
+
     background: url('../images/photo_768.jpg') no-repeat #0a0e34;
   }
 
   .footer_button {
-    margin-top: 126px;
+    margin-top: 103px;
     margin-bottom: 40px;
   }
 
@@ -794,7 +832,7 @@ html, body {
   }
 
   .surface_button .h1 {
-    padding-left: 15px;
+    padding-left: 0;
 
     font-size: 8rem;
 
@@ -810,8 +848,8 @@ html, body {
   }
 
   .download_button {
+    display: flex;
     margin-top: 246px;
-    padding-left: 20px;
   }
 }
 
@@ -832,7 +870,7 @@ html, body {
   }
 
   .h1 {
-    margin-top: 276px;
+    margin-top: 279px;
     margin-bottom: 211px;
 
     font: normal bold 9rem/1.03 OpenSans-Bold;
@@ -843,20 +881,20 @@ html, body {
 
   .header_button {
     margin-bottom: 96px;
-    margin-left: 10px;
   }
 
   .apple_button, .google_button {
     width: 310px;
     height: 78px;
     margin: 0 25px;
+    padding: 0 40px;
 
     box-shadow: 0 16px 24px 0 #0a0e34;
   }
 
   .apple_logo, .google_logo {
-    width: 42px;
-    height: 48px;
+    width: 50px;
+    height: 50px;
   }
 
   .athlets {
@@ -886,13 +924,13 @@ html, body {
   }
 
   .athlets_connection, .athlets_collaboration, .athlets_growth {
-    padding-left: 1007px;
+    padding-left: calc( 50% + 55px );
     padding-right: 160px;
   }
 
   .athlets_h2 {
     margin-top: 88px;
-    margin-left: 1007px;
+    margin-left: calc( 50% + 55px );
 
     font: normal bold 8rem OpenSans-Bold;  
   }
@@ -941,7 +979,7 @@ html, body {
   }
 
   .player_h2 {
-    margin: 88px 315px 0 0;
+    margin: 88px 315px 0;
 
     font: normal bold 8rem OpenSans-Bold;
   }
@@ -967,7 +1005,7 @@ html, body {
   }
 
   .be_active_h2 {
-    margin-top: 234px 131px 0 0;
+    margin: 234px 131px 0;
 
     font: normal bold 8rem OpenSans-Bold;
 
@@ -988,6 +1026,7 @@ html, body {
     transform: translate(-45%, 137%);
 
     line-height: 155px;
+    text-align: center;
   }
 
   .square > .number {
@@ -1070,6 +1109,7 @@ html, body {
   }
 
   .download_button {
+    display: flex;
     margin-top: 130px;
     padding-left: 25px;
   }
