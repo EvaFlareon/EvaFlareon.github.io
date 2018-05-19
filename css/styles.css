@@ -284,7 +284,7 @@ html, body {
 
   .right {
     margin-top: 21px;
-    left: 8vh;
+    left: 20%;
 
     line-height: 1.2em;
   }
@@ -585,7 +585,7 @@ html, body {
   }
 
   .right {
-    left: 35vh;
+    left: calc( 97% - 484.38px );
   }
 
   .header_button {
@@ -893,10 +893,6 @@ html, body {
     word-spacing: 3px;
   }
 
-  .right {
-    left: 82vh;
-  }
-
   .header_button {
     margin-bottom: 96px;
   }
@@ -1131,6 +1127,18 @@ html, body {
     display: flex;
     margin-top: 130px;
     padding-left: 25px;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1134px) {
+  .right {
+    left: calc( 104% - 740.52px );
+  }
+}
+
+@media (min-width: 1135px) {
+  .right {
+    left: calc( 97% - 1057.3px );
   }
 }
 
