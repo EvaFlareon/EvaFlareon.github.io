@@ -185,11 +185,6 @@ html, body {
   content: "";
   display: block;
 
-  width: 20px;
-  height: 5px;
-  margin-top: 2px;
-  margin-left: 1px;
-
   border: none;
   border-radius: 3px;
   color: #8f7bc8;
@@ -447,13 +442,22 @@ html, body {
   }
 
   .square {
+    display: flex;
     width: 70px;
     height: 70px;
-    transform: translate(-230%, 419%);
+    transform: translate(27%, 419%);
   }
 
   .square > .number {
+    margin: auto;
     font-size: 1.4rem;
+  }
+
+  .square > .number::after {
+    width: 15px;
+    height: 3px;
+    margin-top: 2px;
+    margin-left: 0;
   }
 
   .find_contact_h2 {
@@ -763,13 +767,22 @@ html, body {
   }
 
   .square {
+    display: flex;
     width: 116px;
     height: 116px;
-    transform: translate(-295%, 435%);
+    transform: translate(28%, 435%);
   }
 
   .square > .number {
+    margin: auto;
     font-size: 2.4rem;
+  }
+
+  .square > .number::after {
+    width: 20px;
+    height: 5px;
+    margin-top: 2px;
+    margin-left: 3px;
   }
 
   .find_contact_h2 {
@@ -791,7 +804,7 @@ html, body {
   }
 
   .find_contact > .square, .work_it > .square {
-    transform: translate(-295%, 427%);
+    transform: translate(28%, 427%);
   }
 
   .work_it_h2 {
@@ -1052,6 +1065,13 @@ html, body {
   .square > .number {
     margin: auto;
     font-size: 2.4rem;
+  }
+
+  .square > .number::after {
+    width: 20px;
+    height: 5px;
+    margin-top: 2px;
+    margin-left: 3px;
   }
 
   .find_contact {
